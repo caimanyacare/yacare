@@ -1,7 +1,8 @@
 Jowto::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  root :to => 'welcome#jowto'
+  root :to => 'page#welcome'
+  get '/about.html' => 'page#about'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
